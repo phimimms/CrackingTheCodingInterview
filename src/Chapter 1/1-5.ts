@@ -10,22 +10,26 @@ export function compressStringByRepeatedCharacters(source: string): string {
     return null;
   }
 
-  let compressedString = '';
-  let index = 0;
+  let compressed = '';
 
-  while (index < source.length) {
-    const char = source[index];
+  let [ char ] = source;
+  let count = 1;
 
-    let count = 1;
-    index += 1;
+  for (let i = 1; i < source.length; i++) {
+    const nextChar = source[i];
 
-    while (source[index] === char) {
+    if (nextChar === char) {
       count += 1;
-      index += 1;
+
+      continue;
     }
 
-    compressedString += `${char}${count}`;
+    compressed += `${char}${count}`;
+    char = nextChar;
+    count = 1;
   }
 
-  return compressedString.length < source.length ? compressedString : source;
+  compressed += `${char}${count}`;
+
+  return compressed.length < source.length ? compressed : source;
 }
