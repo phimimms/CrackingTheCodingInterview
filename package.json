@@ -1,0 +1,21 @@
+{
+  "name": "crackingthecodinginterview",
+  "version": "0.1.0",
+  "description": "Solutions to practice problems in \"Cracking the Coding Interview\" by Gayle McDowell.",
+  "scripts": {},
+  "author": "Philippe Mimms",
+  "bugs": {
+    "url": "https://github.com/phimimms/CrackingTheCodingInterview/issues"
+  },
+  "homepage": "https://github.com/phimimms/CrackingTheCodingInterview#readme",
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://phimimms@github.com/phimimms/CrackingTheCodingInterview.git"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
