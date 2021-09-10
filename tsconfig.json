@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "lib": [ "DOM", "DOM.Iterable", "ESNext", "WebWorker" ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "paths": {
+      "@test*": [ "./test/*" ],
+    },
+    "target": "es6",
+  },
+  "include": [ "src/**/*", "test/**/*" ],
+}

@@ -2,7 +2,9 @@
   "name": "crackingthecodinginterview",
   "version": "0.1.0",
   "description": "Solutions to practice problems in \"Cracking the Coding Interview\" by Gayle McDowell.",
-  "scripts": {},
+  "scripts": {
+    "test": "jest -c jest.config.js"
+  },
   "author": "Philippe Mimms",
   "bugs": {
     "url": "https://github.com/phimimms/CrackingTheCodingInterview/issues"
@@ -16,6 +18,19 @@
     "type": "git",
     "url": "git+https://phimimms@github.com/phimimms/CrackingTheCodingInterview.git"
   },
-  "devDependencies": {},
-  "dependencies": {}
+  "devDependencies": {
+    "@microsoft/tsdoc": "^0.13.2",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.9.1",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "eslint": "^7.32.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-tsdoc": "^0.2.14",
+    "jest": "^27.1.1",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.2"
+  }
 }
