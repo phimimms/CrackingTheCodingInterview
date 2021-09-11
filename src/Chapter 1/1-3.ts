@@ -7,7 +7,7 @@ export function areStringsPermutations(sourceA: string, sourceB: string): boolea
     return false;
   }
 
-  const characters = new Map();
+  const characters = new Map<string, number>();
 
   for (const char of sourceA) {
     characters.set(char, (characters.get(char) ?? 0) + 1);

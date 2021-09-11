@@ -8,7 +8,7 @@ export function doesStringContainUniqueCharacters(source: string): boolean {
     return false;
   }
 
-  const characters = new Set();
+  const characters = new Set<string>();
 
   for (const char of source) {
     if (characters.has(char)) {
