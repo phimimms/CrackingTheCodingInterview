@@ -3,11 +3,11 @@
  */
 
 /**
- * Indicates whether the source strings are permutations of the each other.
+ * Indicates whether the source strings are a permutation of each other.
  * @param source1 - The first source string.
  * @param source2 - The second source string.
  */
-export function areStringsPermutations(source1: string, source2: string): boolean {
+export function areStringsPermutation(source1: string, source2: string): boolean {
   if (typeof source1 !== 'string' || typeof source2 !== 'string' || source1.length !== source2.length) {
     return false;
   }
