@@ -3,6 +3,10 @@
  * What if you cannot use additional data structures?
  */
 
+/**
+ * Indicates whether the source string has all unique characters.
+ * @param source - The source string.
+ */
 export function doesStringContainUniqueCharacters(source: string): boolean {
   if (typeof source !== 'string') {
     return false;

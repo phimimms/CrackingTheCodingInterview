@@ -2,18 +2,23 @@
  * Given two strings, write a method to decide if one is a permutation of the other.
  */
 
-export function areStringsPermutations(sourceA: string, sourceB: string): boolean {
-  if (typeof sourceA !== 'string' || typeof sourceB !== 'string') {
+/**
+ * Indicates whether the source strings are permutations of the each other.
+ * @param source1 - The first source string.
+ * @param source2 - The second source string.
+ */
+export function areStringsPermutations(source1: string, source2: string): boolean {
+  if (typeof source1 !== 'string' || typeof source2 !== 'string' || source1.length !== source2.length) {
     return false;
   }
 
   const characters = new Map<string, number>();
 
-  for (const char of sourceA) {
+  for (const char of source1) {
     characters.set(char, (characters.get(char) ?? 0) + 1);
   }
 
-  for (const char of sourceB) {
+  for (const char of source2) {
     if (!characters.has(char)) {
       return false;
     }

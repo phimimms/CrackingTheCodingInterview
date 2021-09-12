@@ -3,7 +3,10 @@ import { zeroizeMatrix } from './1-7';
 describe('1-7', () => {
 
   test('zeroizeMatrix()', () => {
-    const arg1: number[][] = [
+    expect(zeroizeMatrix(null)).toBeNull();
+    expect(zeroizeMatrix([ null ])).toBeNull();
+
+    const source1: number[][] = [
       [ 1, 0, 3, 4 ],
       [ 1, 2, 3, 4 ],
       [ 1, 2, 0, 4 ],
@@ -14,9 +17,9 @@ describe('1-7', () => {
       [ 0, 0, 0, 0 ],
     ];
 
-    expect(zeroizeMatrix(arg1)).toEqual(zeroize1);
+    expect(zeroizeMatrix(source1)).toEqual(zeroize1);
 
-    const arg2: number[][] = [
+    const source2: number[][] = [
       [ 1, 2, 3, 4, 5, 6, 7, 8 ],
       [ 1, 2, 0, 4, 5, 6, 7, 8 ],
       [ 1, 2, 3, 4, 5, 6, 7, 8 ],
@@ -33,7 +36,7 @@ describe('1-7', () => {
       [ 0, 0, 0, 0, 0, 0, 0, 0 ],
     ];
 
-    expect(zeroizeMatrix(arg2)).toEqual(zeroize2);
+    expect(zeroizeMatrix(source2)).toEqual(zeroize2);
   });
 
 });

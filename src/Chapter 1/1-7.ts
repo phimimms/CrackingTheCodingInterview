@@ -2,8 +2,14 @@
  * Write an algorithm such that if an element in an MxN matrix is 0, its entire row & column are set to 0.
  */
 
-export function zeroizeMatrix(matrix: number[][]): number[][] {
-  if (!Array.isArray(matrix)) {
+/**
+ * Gets the zeroized form of the source matrix such that if an element in the source matrix is 0,
+ * its entire row & column are set to 0.
+ * @param   source - The source MxN matrix.
+ * @returns The zeroized matrix.
+ */
+export function zeroizeMatrix(source: number[][]): number[][] {
+  if (!Array.isArray(source)) {
     return null;
   }
 
@@ -12,8 +18,8 @@ export function zeroizeMatrix(matrix: number[][]): number[][] {
   const zeroizeColumns = new Set<number>();
   const zeroizeRows = new Set<number>();
 
-  for (const row of matrix.keys()) {
-    const columns = matrix[row];
+  for (const row of source.keys()) {
+    const columns = source[row];
 
     if (!Array.isArray(columns)) {
       valid = false;
@@ -35,8 +41,8 @@ export function zeroizeMatrix(matrix: number[][]): number[][] {
     return null;
   }
 
-  return Array.from(matrix.keys()).map((row) => {
-    const columns = matrix[row];
+  return Array.from(source.keys()).map((row) => {
+    const columns = source[row];
 
     if (zeroizeRows.has(row)) {
       return columns.map(() => 0);

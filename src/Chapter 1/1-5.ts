@@ -5,6 +5,12 @@
  * your method should return the original string.
  */
 
+/**
+ * Performs basic string compression using the counts of repeated characters.
+ * If the source string is shorter than the compressed string, then the source string is returned.
+ * @param   source - The source string.
+ * @returns The compressed string, unless the source string is shorter.
+ */
 export function compressStringByRepeatedCharacters(source: string): string {
   if (typeof source !== 'string') {
     return null;

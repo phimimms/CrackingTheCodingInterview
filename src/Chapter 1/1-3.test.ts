@@ -12,6 +12,7 @@ describe('1-3', () => {
     expect(areStringsPermutations(null, '')).toBe(false);
     expect(areStringsPermutations('', null)).toBe(false);
     expect(areStringsPermutations(null, null)).toBe(false);
+    expect(areStringsPermutations('ab', 'a')).toBe(false);
     expect(areStringsPermutations('ab', 'ac')).toBe(false);
     expect(areStringsPermutations('aB', 'AB')).toBe(false);
   });
