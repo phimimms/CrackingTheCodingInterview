@@ -6,7 +6,7 @@
  */
 
 /**
- * Performs basic string compression using the counts of repeated characters.
+ * Gets the basic string compression of the source string by using the counts of repeated characters.
  * If the source string is shorter than the compressed string, then the source string is returned.
  * @param   source - The source string.
  * @returns The compressed string, unless the source string is shorter.

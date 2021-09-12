@@ -1,15 +1,15 @@
-import { doesStringContainUniqueCharacters } from './1-1';
+import { isStringAllUnique } from './1-1';
 
 describe('1-1', () => {
 
-  test('doesStringContainUniqueCharacters()', () => {
-    expect(doesStringContainUniqueCharacters('')).toBe(true);
-    expect(doesStringContainUniqueCharacters('aA')).toBe(true);
-    expect(doesStringContainUniqueCharacters('ab')).toBe(true);
-    expect(doesStringContainUniqueCharacters('abcde')).toBe(true);
+  test('isStringAllUnique()', () => {
+    expect(isStringAllUnique('')).toBe(true);
+    expect(isStringAllUnique('aA')).toBe(true);
+    expect(isStringAllUnique('ab')).toBe(true);
+    expect(isStringAllUnique('abcde')).toBe(true);
 
-    expect(doesStringContainUniqueCharacters('aBa')).toBe(false);
-    expect(doesStringContainUniqueCharacters(null)).toBe(false);
+    expect(isStringAllUnique('aBa')).toBe(false);
+    expect(isStringAllUnique(null)).toBe(false);
   });
 
 });

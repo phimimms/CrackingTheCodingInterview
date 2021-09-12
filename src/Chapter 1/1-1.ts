@@ -7,7 +7,7 @@
  * Indicates whether the source string has all unique characters.
  * @param source - The source string.
  */
-export function doesStringContainUniqueCharacters(source: string): boolean {
+export function isStringAllUnique(source: string): boolean {
   if (typeof source !== 'string') {
     return false;
   }
